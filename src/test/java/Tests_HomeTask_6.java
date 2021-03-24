@@ -243,11 +243,11 @@ public class Tests_HomeTask_6 {
         WebElement xPathElement6 = driver.findElement(By.xpath("//*[text()='TV-программа']"));
         Assert.assertTrue(xPathElement6.isEnabled());
 
-        //    WebElement xPathElement4 = driver.findElement(By.xpath("//div[@class='supernova-navi-item supernova-navi-item_lvl-2 HH-Supernova-NaviLevel2-Item supernova-navi-item_dashboard ']/attribute::data-navi-item-name "));
-        //    Assert.assertTrue(xPathElement4.isEnabled());
+        WebElement xPathAttributeElem = driver.findElement(By.xpath("//iframe[attribute::id]"));
+        Assert.assertTrue(xPathAttributeElem.isEnabled());
 
-        //      WebElement xPathElemElem9 = driver.findElement(By.xpath("//iframe/attribute::id"));
-        //      Assert.assertTrue(xPathElemElem9.isEnabled());
+        WebElement xPathAttributeElem2 = driver.findElement(By.xpath("//div[attribute::data-navi-item-name]"));
+        Assert.assertTrue(xPathAttributeElem2.isEnabled());
 
         driver.quit();
     }
